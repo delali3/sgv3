@@ -1,0 +1,154 @@
+/* SchedulePage.css */
+.schedule-page {
+    padding: 24px;
+  }
+  
+  /* Calendar customization */
+  .site-calendar-card {
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .events {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .events .ant-badge-status {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .notes-tag {
+    font-size: 12px;
+    background: #f5f5f5;
+    border: none;
+    margin-top: 4px;
+  }
+  
+  /* Appointment status colors */
+  .status-scheduled {
+    color: #1890ff;
+    background: #e6f7ff;
+    border-color: #91d5ff;
+  }
+  
+  .status-completed {
+    color: #52c41a;
+    background: #f6ffed;
+    border-color: #b7eb8f;
+  }
+  
+  .status-cancelled {
+    color: #ff4d4f;
+    background: #fff1f0;
+    border-color: #ffa39e;
+  }
+  
+  /* Calendar cell with appointments */
+  .ant-picker-calendar-date-content {
+    height: 100%;
+    min-height: 60px;
+  }
+  
+  .ant-picker-calendar-date {
+    transition: background-color 0.3s;
+  }
+  
+  .ant-picker-calendar-date:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  /* Appointment list in drawer */
+  .appointment-list-item {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    transition: all 0.3s;
+  }
+  
+  .appointment-list-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .appointment-time {
+    font-weight: 500;
+    margin-right: 8px;
+  }
+  
+  .appointment-patient {
+    color: #1890ff;
+  }
+  
+  /* Modal form styles */
+  .ant-form-item-label {
+    font-weight: 500;
+  }
+  
+  .time-picker-wide {
+    width: 100%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .schedule-page {
+      padding: 16px;
+    }
+  
+    .ant-picker-calendar-date-content {
+      height: auto;
+      min-height: 40px;
+    }
+  
+    .events .ant-badge-status {
+      font-size: 10px;
+    }
+  }
+  
+  /* Appointment type badges */
+  .appointment-type-checkup {
+    background-color: #e6f7ff;
+    color: #1890ff;
+    border-color: #91d5ff;
+  }
+  
+  .appointment-type-followup {
+    background-color: #f6ffed;
+    color: #52c41a;
+    border-color: #b7eb8f;
+  }
+  
+  .appointment-type-consultation {
+    background-color: #f9f0ff;
+    color: #722ed1;
+    border-color: #d3adf7;
+  }
+  
+  .appointment-type-emergency {
+    background-color: #fff1f0;
+    color: #ff4d4f;
+    border-color: #ffa39e;
+  }
+  
+  /* Calendar header */
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .calendar-header .ant-select {
+    margin-right: 8px;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+}

@@ -1,0 +1,101 @@
+/* PatientProfile.css */
+.patient-profile {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .profile-header {
+    margin-bottom: 24px;
+  }
+  
+  .avatar-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-card {
+    margin-bottom: 24px;
+    position: relative;
+  }
+  
+  .profile-card .ant-card-head {
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .edit-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  
+  .medical-info-section {
+    display: grid;
+    gap: 24px;
+  }
+  
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .form-actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .patient-profile {
+      padding: 16px;
+    }
+  
+    .profile-header {
+      margin-bottom: 16px;
+    }
+  
+    .edit-button {
+      position: static;
+      margin-top: 16px;
+      width: 100%;
+    }
+  }
+  
+  /* Animation for tab transitions */
+  .ant-tabs-content {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Custom styling for medical history items */
+  .medical-history-item {
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+  }
+  
+  .medical-history-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Custom styling for medication items */
+  .medication-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 8px;
+  }
+  
+  /* Status tag styles */
+  .status-tag {
+    border-radius: 12px;
+    padding: 2px 12px;
+  }

@@ -1,0 +1,117 @@
+/* styles/auth/Register.module.css */
+.container {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 48px 24px;
+  }
+  
+  .formCard {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formCard :global(.ant-card-body) {
+    padding: 32px !important;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .title {
+    color: #1f2937;
+    margin-bottom: 8px !important;
+  }
+  
+  .subtitle {
+    color: #6b7280;
+  }
+  
+  .form {
+    max-width: 100%;
+  }
+  
+  .submitButton {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .loginLink {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .inputPrefix {
+    color: #6b7280;
+  }
+  
+  .divider {
+    margin: 24px 0;
+  }
+  
+  .error {
+    color: #ff4d4f;
+    margin-bottom: 16px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 24px 16px;
+    }
+  
+    .formCard :global(.ant-card-body) {
+      padding: 24px !important;
+    }
+  
+    .form :global(.ant-form-item) {
+      margin-bottom: 16px;
+    }
+  
+    .form :global(.ant-col) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Input hover and focus states */
+  .form :global(.ant-input:hover),
+  .form :global(.ant-input:focus),
+  .form :global(.ant-input-password:hover),
+  .form :global(.ant-input-password:focus) {
+    border-color: #4096ff;
+  }
+  
+  /* Select hover and focus states */
+  .form :global(.ant-select-selector:hover),
+  .form :global(.ant-select:focus .ant-select-selector) {
+    border-color: #4096ff !important;
+  }
+  
+  /* Date picker hover and focus states */
+  .form :global(.ant-picker:hover),
+  .form :global(.ant-picker-focused) {
+    border-color: #4096ff;
+  }
+  
+  /* Password strength indicator */
+  .passwordStrength {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+  
+  .passwordStrength.weak {
+    color: #ff4d4f;
+  }
+  
+  .passwordStrength.medium {
+    color: #faad14;
+  }
+  
+  .passwordStrength.strong {
+    color: #52c41a;
+  }

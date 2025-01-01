@@ -1,0 +1,66 @@
+/* SettingsPage.css */
+.settings-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  .settings-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .profile-section {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .avatar-upload {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .settings-form {
+    max-width: 500px;
+  }
+  
+  .notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #1f2937;
+  }
+  
+  .section-description {
+    color: #6b7280;
+    margin-bottom: 24px;
+  }
+  
+  .working-hours {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .preference-item {
+    margin-bottom: 24px;
+  }
+  
+  .preference-item label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }

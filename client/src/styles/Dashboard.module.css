@@ -1,0 +1,70 @@
+/* // src/styles/Dashboard.module.css */
+.dashboardContainer {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.welcomeSection {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  padding: 24px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statsSection {
+  margin-bottom: 24px;
+}
+
+.statCard {
+  height: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.statCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contentCard {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.listContainer {
+  overflow: hidden;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.appointmentItem {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+
+.appointmentItem:hover {
+  background: #f5f5f5;
+}
+
+.quickActions {
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .dashboardContainer {
+    padding: 16px;
+  }
+
+  .welcomeSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

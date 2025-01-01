@@ -1,0 +1,96 @@
+/* src/components/layout/Sidebar.module.css */
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #fff7ed, #f1f5f9) !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+}
+
+.logoSection {
+  padding: 24px 16px;
+  text-align: center;
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  margin-bottom: 8px;
+}
+
+.brandingFull {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandingText {
+  text-align: center;
+}
+
+.brandingText h5 {
+  color: white !important;
+  margin: 4px 0 0 !important;
+}
+
+.brandingText span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+
+.userInfo {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.userInfo h5 {
+  margin: 4px 0 !important;
+}
+
+.sidebarMenu {
+  border: none !important;
+  background: transparent !important;
+}
+
+.sidebarMenu :global(.ant-menu-item) {
+  margin: 4px 8px !important;
+  border-radius: 6px;
+}
+
+.sidebarMenu :global(.ant-menu-item:hover) {
+  background-color: rgba(249, 115, 22, 0.1) !important;
+}
+
+.sidebarMenu :global(.ant-menu-item-selected) {
+  background-color: rgba(249, 115, 22, 0.2) !important;
+  color: #f97316 !important;
+}
+
+.sidebarMenu :global(.ant-menu-item-selected .anticon) {
+  color: #f97316 !important;
+}
+
+.sidebarFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  background: linear-gradient(to right, #fff7ed, #f1f5f9);
+}
+
+.mobileMenuButton {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

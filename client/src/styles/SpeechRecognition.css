@@ -1,0 +1,20 @@
+.speech-recognition {
+    margin: 8px 0;
+  }
+  
+  .speech-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .speech-audio-level {
+    margin: 8px 0;
+  }
+  
+  .speech-interim-transcript {
+    color: #666;
+    font-style: italic;
+    margin-top: 8px;
+  }
